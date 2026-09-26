@@ -1,0 +1,25 @@
+# KeepFloor
+
+> The Etsy list price that still pays you. Put in one listing and it works out the
+> whole published fee stack, then the lowest charmed price that survives Offsite Ads.
+
+The arithmetic runs in the browser. Nothing is uploaded, and there is no account.
+Not affiliated with Etsy; the rates are the published ones, with the date they were read.
+
+## What it answers
+
+- What you keep at a given list price, against the target you set.
+- The organic floor: the lowest price that works when no Offsite Ads fee applies.
+- The ads-safe floor: the lowest price that still pays when the fee does apply.
+- The survive-all floor: the price that holds through a sale and the ads fee together.
+
+## Pages
+
+- [Calculator](https://keep-floor.vercel.app/)
+- [Catalog](https://keep-floor.vercel.app/#/catalog): price a whole shop from a CSV.
+- [Sources](https://keep-floor.vercel.app/#/sources): every rate, with where it was published.
+
+## Elsewhere
+
+- [Labs](https://labs.johnjayasankar.com/)
+- Contact: johnjayasankar@gmail.com

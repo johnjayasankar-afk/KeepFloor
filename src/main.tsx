@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import { App } from "./App";
 import { ErrorBoundary } from "./ui/ErrorBoundary";
 import "./index.css";
+import { startLabsUI } from "./ui/labs-ui-init";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -11,3 +12,5 @@ createRoot(document.getElementById("root")!).render(
     </ErrorBoundary>
   </StrictMode>,
 );
+
+startLabsUI();

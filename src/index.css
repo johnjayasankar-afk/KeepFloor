@@ -1,20 +1,28 @@
+/* The two faces, self-hosted, so the page reads the same on a machine that has
+   neither Avenir Next nor Source Serif installed. Both come from the Labs family. */
+@font-face { font-family: "Inter"; src: url(/fonts/inter-var.woff2) format("woff2"); font-weight: 100 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "IBM Plex Mono"; src: url(/fonts/ibm-plex-mono-latin-400.woff2) format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "IBM Plex Mono"; src: url(/fonts/ibm-plex-mono-latin-500.woff2) format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+
 :root {
-  --paper: #f3eee4;
-  --ink: #1c1915;
-  --muted: #5c564c;
-  --line: #d4cdc0;
-  --panel: #fbf8f2;
-  --keep: #1f3d2b;
-  --keep-soft: #dce8df;
-  --warn: #8a3d1b;
-  --warn-soft: #f3e2d6;
-  --ok: #1f3d2b;
+  /* KeepFloor on the Labs ground: porcelain, forest ink, the family's hairline.
+     The ledger character stays in the layout; only the colours and the faces move. */
+  --paper: #f8f6f1;
+  --ink: #0f1712;
+  --muted: #48524c;
+  --line: rgba(28, 51, 38, .16);
+  --panel: #ffffff;
+  --keep: #1f6b4a;
+  --keep-soft: #dcf3e6;
+  --warn: #8a4a0b;
+  --warn-soft: #fbf0dc;
+  --ok: #1f6b4a;
   --info: #3d4a5c;
-  --focus: #1f3d2b;
-  --radius: 3px;
-  --mono: "IBM Plex Mono", "ui-monospace", "SFMono-Regular", Menlo, monospace;
-  --serif: "Source Serif 4", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-  --sans: "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif;
+  --focus: #1f6b4a;
+  --radius: 12px;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --serif: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --shell: 5.75rem;
 }
 
@@ -963,3 +971,6 @@ summary { cursor: pointer; color: var(--keep); }
     padding: 0;
   }
 }
+
+/* The Labs material, last so a surface that opts into .gl takes it. */
+@import './styles/labs-glass.css';
